@@ -1,5 +1,6 @@
 # yts_torrents
 download all torrents from yts.am (yify movies). Uses yify api.
+Used to create [movie_torrents](https://github.com/makkoncept/movie_torrents).
 
 ## Usage
 - clone the repo 
@@ -19,9 +20,9 @@ python3 -m venv venv
 ```
 venv\Scripts\activate.bat  
 ```  
-- Install requirements:
+- Install requests
 ```
-pip install -r requirements.txt  
+pip install requests
 ```  
 
 run `python yts_am_api.py` to make json files containing torrent links of the movies. Then run `python linkdownload.py` 
