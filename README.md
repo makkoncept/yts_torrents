@@ -1,6 +1,7 @@
 # yts_torrents
 download all torrents from yts.am (yify movies). Uses yify api.
-Used to create [movie_torrents](https://github.com/makkoncept/movie_torrents).
+
+**Used to create [movie_torrents](https://github.com/makkoncept/movie_torrents)[repository of 10k+ movie torrents].**
 
 ## Usage
 - clone the repo 
