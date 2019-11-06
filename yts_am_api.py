@@ -53,7 +53,7 @@ for page in range(1, 424):
     api_url = url + str(page)
     time.sleep(1)
     print(api_url)
-    response = requests_retry_session().get(api_url, timeout=3).json()
+    response = requests_retry_session().get(api_url, timeout=120).json()
     time.sleep(2)
     data = response.get('data')
     movies = data.get('movies')
