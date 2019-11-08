@@ -45,7 +45,9 @@ def download_torrent(bin_content, movie_name, type):
 
 
 # write the torrents json file names here.
-torrent_list = ['torrents2.json', 'torrents3.json', 'torrents4.json', 'torrents5.json', 'torrents6.json', 'torrents7.json', 'torrents8.json', 'torrents9.json', 'torrents10.json', 'torrents11.json', 'torrents12.json', 'torrents13.json', 'torrents14.json', 'torrents15.json']
+torrent_list = ['torrents1.json', 'torrents2.json', 'torrents3.json', 'torrents5.json',
+                'torrents6.json', 'torrents7.json', 'torrents8.json', 'torrents9.json',
+                'torrents10.json', 'torrents11.json', 'torrents12.json', 'torrents13.json']
 for torrent_json_file in torrent_list:
     if not os.path.isfile(torrent_json_file):
         print("{} does not exist. Run yts_am_api.py script "
@@ -65,7 +67,6 @@ for torrent_json_file in torrent_list:
         web_720 = torrents.get('720_web')
         #EDIT: Format name to remove special characters to prevent name truncation.
         movie = movie.encode('utf-8').decode('utf-8').replace(':','').replace('?','').replace('/','-').replace('*','')
-        #time.sleep(0.01) EDIT: Don't need this.
         if bluray_1080 is not None:
             if (movie + 'bluray_1080p.torrent') in cache:
                 print("{} already downloaded".format(movie))
